@@ -43,6 +43,7 @@ namespace ECommerce.ProductCatalog
         protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
         {
             return this.CreateServiceRemotingReplicaListeners();
+
         }
 
         /// <summary>

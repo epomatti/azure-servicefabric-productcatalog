@@ -20,7 +20,7 @@ namespace ECommerce.ProductCatalog
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
 
-                ServiceRuntime.RegisterServiceAsync("ECommerce.ProductCatalogType",
+                ServiceRuntime.RegisterServiceAsync("ProductCatalogType",
                     context => new ProductCatalog(context)).GetAwaiter().GetResult();
 
                 ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(ProductCatalog).Name);
