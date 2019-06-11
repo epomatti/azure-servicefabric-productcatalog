@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ECommerce", "ECommerce\ECommerce.sfproj", "{ED894105-EA66-42DA-A105-F98F0F5AFFD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.ProductCatalog", "ECommerce.ProductCatalog\ECommerce.ProductCatalog.csproj", "{243A0A10-E6FC-4AFF-BE72-067F15975F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.ProductCatalog", "ECommerce.ProductCatalog\ECommerce.ProductCatalog.csproj", "{243A0A10-E6FC-4AFF-BE72-067F15975F77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.ProductCatalog.Model", "ECommerce.ProductCatalog.Model\ECommerce.ProductCatalog.Model.csproj", "{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}"
 EndProject
@@ -27,16 +27,16 @@ Global
 		{ED894105-EA66-42DA-A105-F98F0F5AFFD5}.Release|x64.Deploy.0 = Release|x64
 		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Debug|x64.Build.0 = Debug|Any CPU
+		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Debug|x64.ActiveCfg = Debug|x64
+		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Debug|x64.Build.0 = Debug|x64
 		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Release|Any CPU.Build.0 = Release|Any CPU
 		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Release|x64.ActiveCfg = Release|Any CPU
 		{243A0A10-E6FC-4AFF-BE72-067F15975F77}.Release|x64.Build.0 = Release|Any CPU
 		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Debug|x64.Build.0 = Debug|Any CPU
+		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Debug|x64.ActiveCfg = Debug|x64
+		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Debug|x64.Build.0 = Debug|x64
 		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2648AF6D-EF09-40DC-849B-8DE3854B7F7C}.Release|x64.ActiveCfg = Release|Any CPU
