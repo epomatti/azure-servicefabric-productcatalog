@@ -6,5 +6,5 @@ Example from Pluralsight course "Understanding the Programming Models of Azure S
 
 To run it with Visual Studio:
 
-1. Right-click solution > Configuration Manager > set *Active Solution Platform* to **x64**
+1. Right-click *Solution* > *Configuration Manager* > set *Active Solution Platform* to **x64**
 2. Run the solution
