@@ -33,6 +33,11 @@ namespace ECommerce.ProductCatalog
             return await _repo.GetAllProducts();
         }
 
+        public Task<Product> GetProduct(Guid productId)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Optional override to create listeners (e.g., HTTP, Service Remoting, WCF, etc.) for this service replica to handle client or user requests.
         /// </summary>
