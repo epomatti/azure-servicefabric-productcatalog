@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8166cd6e-7a8a-46d8-b25f-d8fc22b5ddcf",
+		"name": "servicefabric",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8502/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8502",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Acer Monitor\",\n\t\"description\": \"New Acer Monitor\",\n\t\"price\": 5000,\n\t\"availability\": 50\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8502/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8502",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "basket",
+			"item": [
+				{
+					"name": "add to basket",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"03b8e6aa-717d-44e0-bcb0-ad9e512a2747\",\n    \"quantity\": 3\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8502/api/basket/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8502",
+							"path": [
+								"api",
+								"basket",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get basket",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8502/api/basket/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8502",
+							"path": [
+								"api",
+								"basket",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empty basket",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8502/api/basket/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8502",
+							"path": [
+								"api",
+								"basket",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
