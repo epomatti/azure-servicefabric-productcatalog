@@ -36,7 +36,6 @@ namespace ECommerce.ProductCatalog
                     }
                 }
             }
-
             return result;
         }
 
@@ -47,8 +46,22 @@ namespace ECommerce.ProductCatalog
             using (var tx = _stateManager.CreateTransaction())
             {
                 await products.AddOrUpdateAsync(tx, product.Id, product, (id, value) => product);
-
                 await tx.CommitAsync();
+            }
+        }
+
+        public async Task<Product> GetProduct(Guid productId) {
+            var products = await _stateManager.GetOrAddAsync<IReliableDictionary<Guid, Product>>("products");
+            using (var tx = _stateManager.CreateTransaction())
+            {
+                ConditionalValue<Product> result = await products.TryGetValueAsync(tx, productId);
+                if(result.HasValue)
+                {
+                    return result.Value;
+                } else
+                {
+                    throw new Exception(string.Format("Prodct {0} not found}", productId));
+                }                
             }
         }
     }

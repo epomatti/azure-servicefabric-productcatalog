@@ -53,8 +53,8 @@ namespace ECommerce.API.Controllers
          long key = LongRandom();
 
          return ServiceProxy.Create<ICheckoutService>(
-                new Uri("fabric:/ECommerce/CheckoutService"),
-                new ServicePartitionKey(key));
+                new Uri("fabric:/ECommerce/ECommerce.CheckoutService"),
+                new ServicePartitionKey(0));
       }
 
       private long LongRandom()

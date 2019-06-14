@@ -33,9 +33,9 @@ namespace ECommerce.ProductCatalog
             return await _repo.GetAllProducts();
         }
 
-        public Task<Product> GetProduct(Guid productId)
+        public async Task<Product> GetProduct(Guid productId)
         {
-            throw new NotImplementedException();
+            return await _repo.GetProduct(productId);
         }
 
         /// <summary>
