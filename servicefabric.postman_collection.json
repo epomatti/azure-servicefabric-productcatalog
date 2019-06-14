@@ -146,6 +146,32 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "checkout",
+			"item": [
+				{
+					"name": "checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8502/api/checkout/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8502",
+							"path": [
+								"api",
+								"checkout",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
