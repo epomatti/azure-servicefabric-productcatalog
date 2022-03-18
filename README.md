@@ -1,6 +1,6 @@
 # Azure Service Fabric - Product Catalog Example
 
-Example from Pluralsight course [Understanding the Programming Models of Azure Service Fabric](https://app.pluralsight.com/library/courses/azure-service-fabric-programming-models/table-of-contents).
+Implementation from Pluralsight course [Understanding the Programming Models of Azure Service Fabric](https://app.pluralsight.com/library/courses/azure-service-fabric-programming-models/table-of-contents).
 
 ### Service Fabric Runtime and SDK
 
